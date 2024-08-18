@@ -1,4 +1,5 @@
 *{font-family: "Oswald", sans-serif;color: rgb(32, 10, 31);}
+/* general */
 
 .cabecera{display: flex;
     justify-content: center;
@@ -31,8 +32,11 @@ grid-template-rows: repeat(2,200px);
 row-gap: 1rem;
 column-gap: 1rem;
 margin-left: 2rem;
-margin-right: 5rem;
-}
+margin-right: 5rem;}
+
+.parrafoIndex{background-color: rgba(255, 255, 255, 0.516);
+border-radius: 1rem;
+padding: 1rem;}
 
 .uno{grid-row: 1 / 3;}
 .dos{grid-row: 1 / 3;}
@@ -40,7 +44,7 @@ margin-right: 5rem;
 .fotito img{width: 100%;height: 100%;}
 
 p{text-align: center;
-margin: 0 1rem 0 1rem;
+margin:0 1rem 0.5rem 0.5rem;
 text-indent: 10px;
 font-weight: 450;}
 
@@ -51,8 +55,8 @@ font-weight: 450;}
 
 .linkFooters{text-decoration: none;list-style: none;font-size: 0.7rem;}
 .small{text-align: center;}
-footer{background-color: rgba(208, 43, 226, 0.264);}
-footer{position: absolute;bottom: 0;width: 100%;margin-top: 10%;}
+footer{background-color: rgba(208, 43, 226, 0.264);position:sticky;width: 100%;}
+
 
 
 /* aplica al body main Suscribir */
@@ -62,24 +66,46 @@ grid-template-columns: 50%;
 grid-template-rows: repeat(3,25px);
 grid-row: 1/ 3;
 margin-left: 2rem;}
-.enviar{margin-left: 1rem;}
+
+.formIngresar{display: flex;
+flex-direction: column;width: 60%;}
+
+.enviar{margin-left: 1rem;border-radius: 0.5rem;}
 
 .parrafoSuscribir{font-size: 0.9rem;
 margin-bottom: 2rem;}
 
-.RegistroSuscribir{display: flex;
-justify-content: center;
-margin-bottom: 0;}
+input{border-radius: 0.4rem;}
 
 .RegistroSuscribir a{text-decoration: none;}
-.imgSuscribir{display: flex;
--ms-flex-align: center;
+.RegistroSuscribir{display: flex;justify-content: center;}
+
+.imgSuscribr{float: right;}
+
+.novedadesh1{font-size: 1.2rem;text-align: center;text-decoration: overline;margin-bottom: 1rem;}
+.h2article{font-size: 20px;background-color: rgba(118, 15, 104, 0.268); border-radius: 0.5rem; width: 150px;margin-bottom: 1rem;}
+.h3article{font-size: 15px;text-decoration: overline;}
+.p-article{text-align: start;font-size: 12px;}
+.novedades{background-color: rgba(246, 242, 246, 0.838);width: 310px;padding-top: 1rem;border-radius: 0.5rem;}
+.novedadesSitio{text-align: center;justify-content: center;align-items: center;}
+.articleSuscribir{display: flex;justify-content: space-evenly;padding: 0.5rem;}
+.article{background-color: rgba(250, 50, 247, 0.085);width: 290px;}
+
+/* aplica al body main Cursos */
+
+.videoCursos{display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(2,100px);
+    row-gap: 1rem;
+    column-gap: 1rem;
 justify-content: center;}
+.video1{grid-row: 1 / 3;}
+.video2{grid-row: 1 / 3;}
+.video3{grid-row: 1 / 3;}
 
 
 
-
-
+.h2curso{text-align: center;text-decoration: overline;}
 
 
 
@@ -94,25 +120,32 @@ justify-content: center;}
     .slide{display:grid;
     justify-content: center;
     grid-template-columns: auto;
-    align-items: center;}}
+    align-items: center;}
+.linkFooter{display:grid;justify-content: center;}
+.articleSuscribir{display: grid;justify-content: center;}
+.videoCursos{display:block;}}
 
 @media screen and (min-width:501px) and (max-width:960px){
-.fotito{display:inline-block;
+.fotito{display:block;
 padding-bottom: 1rem;}
 .linkFooter{display: flex;
 justify-content: space-between;}
 .slide{display:grid;
     justify-content: center;
     grid-template-columns: auto;
-    align-items: center;}}
+    align-items: center;}
+.articleSuscribir{display: grid;justify-content: center;}
+.videoCursos{display:block;}}
+
 
 
 @media screen and (min-width:961px){
-    .quienes{display: flex;}
+    .quienes{display:flex;flex-direction: row;justify-items: center;}
     .linkFooter{display: flex;
     justify-content: space-around;}
     .slide{display:grid;
         justify-content: center;
         grid-template-columns: auto;
-        align-items: center;}}
+        align-items: center;}
+    .imgTrabajos{width: 100%}}
     
