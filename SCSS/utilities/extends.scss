@@ -1,0 +1,19 @@
+%flexRun{
+    display: flex;
+    align-items: center;
+}
+
+%textAlineamiento{
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+%textOverline{
+    text-align: center;
+    text-decoration: overline;}
+
+%videoPosition{
+    grid-row: 1 / 3;
+}
+
+

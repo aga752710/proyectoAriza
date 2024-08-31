@@ -1,0 +1,59 @@
+@media screen and (max-width:500px){
+    .fotito{display:block;
+    padding: 0.5rem;}
+.formIngresar{grid-template-columns: 75%;}
+.imgTrabajos{width: 100%; height:100%;}
+.slide{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    align-items: center;}
+
+.linkFooter{display:grid;
+    justify-content: center;}
+
+.articleSuscribir{display: grid;
+    justify-content: center;}
+
+.videoCursos{display:block;
+    margin-left: 3%;}
+
+.inputRegistro{height: 1.3rem;}}
+
+
+@media screen and (min-width:501px) and (max-width:960px){
+.fotito{display:block;
+    padding-bottom: 1rem;width: 60%;
+    margin-left: 13%;}
+
+.linkFooter{display: flex;
+    justify-content: space-between;}
+
+.slide{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    align-items: center;}
+
+.articleSuscribir{display: grid;
+    justify-content: center;}
+
+.videoCursos{display:block;justify-content: space-between;}
+.video3{
+    grid-column: (1 / 3);
+}
+}
+
+
+
+@media screen and (min-width:961px){
+.quienes{display:flex;
+    flex-direction: row;
+    justify-items: center;}
+.linkFooter{display: flex;
+    justify-content: space-around;}
+.slide{display:grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    align-items: center;}
+.imgTrabajos{width: 100%}}
