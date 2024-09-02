@@ -12,7 +12,9 @@
     text-align: center;
     text-decoration: overline;}
 
-%videoPosition{
-    grid-row: 1 / 3;
+%transformScale{
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 

@@ -11,7 +11,7 @@ body {
   justify-content: center;
   background-image: url(../images/wp4720671-color-pastel-wallpapers.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  height: 10rem;
 }
 
 .barra {
@@ -41,25 +41,21 @@ body {
 
 footer {
   background-color: rgba(208, 43, 226, 0.264);
-  position: sticky;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
 /* aplica al body main index */
-.fotito {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: repeat(2, 200px);
-  row-gap: 1rem;
-  column-gap: 1rem;
-  margin-left: 2rem;
-  margin-right: 5rem;
-}
-
 .parrafoIndex {
   background-color: rgba(255, 255, 255, 0.516);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.parrafoIndex:hover {
+  background-color: rgb(253, 250, 250);
+  transition: 2s;
 }
 
 .fotito img {
@@ -74,17 +70,11 @@ p {
   font-weight: 450;
 }
 
-.subtituloRepo {
-  text-align: center;
-  margin-top: 3rem;
-}
-
 /* aplica al body main Suscribir */
 .formIngresar {
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: repeat(3, 25px);
-  grid-row: 1/3;
   margin-left: 2rem;
 }
 
@@ -110,15 +100,12 @@ input {
 
 .RegistroSuscribir a {
   text-decoration: none;
+  align-items: center;
 }
 
 .RegistroSuscribir {
   display: flex;
   justify-content: center;
-}
-
-.imgSuscribr {
-  float: right;
 }
 
 .novedadesh1 {
@@ -171,6 +158,10 @@ input {
   padding: 0.5rem;
 }
 
+.video1, .video2, .video3 {
+  transition: 3s;
+}
+
 .nav-link:hover {
   background-color: rgb(133, 84, 180);
   transition: 1s;
@@ -178,11 +169,11 @@ input {
 }
 
 .navbar {
-  color: rgba(255, 255, 255, 0);
+  background-color: transparent !important;
 }
 
 a:visited {
-  color: aqua;
+  color: rgb(25, 21, 21);
 }
 
 .cabecera, .barra {
@@ -201,14 +192,18 @@ a:visited {
   text-decoration: overline;
 }
 
-.uno, .dos, .tres {
-  grid-row: 1/3;
+.fotito img:hover, .novedadesSitio:hover, .video1:hover, .video2:hover, .video3:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 500px) {
   .fotito {
     display: block;
-    padding: 0.5rem;
+  }
+  .fotito1 {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
   }
   .formIngresar {
     grid-template-columns: 75%;
@@ -243,9 +238,11 @@ a:visited {
 @media screen and (min-width: 501px) and (max-width: 960px) {
   .fotito {
     display: block;
-    padding-bottom: 1rem;
-    width: 60%;
-    margin-left: 13%;
+  }
+  .fotito1 {
+    width: 50%;
+    margin: 1rem 0;
+    padding: 3rem;
   }
   .linkFooter {
     display: flex;
@@ -268,6 +265,13 @@ a:visited {
   }
 }
 @media screen and (min-width: 961px) {
+  .fotito {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 440px);
+    margin: 1rem;
+    column-gap: 5rem;
+  }
   .quienes {
     display: flex;
     flex-direction: row;
@@ -285,7 +289,14 @@ a:visited {
   }
   .imgTrabajos {
     width: 100%;
+    margin: 0 auto;
   }
+}
+.subtituloRepo {
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: overline;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
