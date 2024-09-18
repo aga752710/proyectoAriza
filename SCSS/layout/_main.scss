@@ -1,12 +1,17 @@
 /* aplica al body main index */
     
-    .parrafoIndex{background-color: rgba(255, 255, 255, 0.516);
+    .parrafoIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.516);
         border-radius: 1rem;
         padding: 1rem;
     }
     .parrafoIndex:hover{
         background-color: rgb(253, 250, 250);
-        transition: 2s;}
+        transition: 1s;
+    }
     
     .fotito img{
         width: 100%;
@@ -14,32 +19,44 @@
         @extend %transformScale;}
     
     p{text-align: center;
-        margin:0 1rem 0.5rem 0.5rem;
+        margin: 1rem 2.5rem;
         text-indent: 10px;
         font-weight: 450;
+
+}
+.fotito{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    row-gap: 2rem;
+    padding: 5rem 2rem 0 2rem;
+    width: 65%;
 }
 
     
     
 /* aplica al body main Suscribir */
 
-.formIngresar{display: grid;
+.formIngresar{
+    display: grid;
     grid-template-columns: 50%;
     grid-template-rows: repeat(3,25px);
-    margin-left: 2rem;}
+    background-color: rgba(232, 124, 221, 0.336);
+    margin: 0 auto;
+    justify-content: center;
+}
 
-.formIngresar{display: flex;
-    flex-direction: column;
-    width: 60%;}
 
-.enviar{margin-left: 1rem;
-    border-radius: 0.5rem;}
+
+.enviar{
+    @extend %botonSubmit}
 
 .parrafoSuscribir{
     font-size: 0.9rem;
     margin-bottom: 2rem;}
 
-input{border-radius: 0.4rem;}
+input{
+    border-radius: 0.4rem;}
 
 .RegistroSuscribir a{
     text-decoration: none; 
@@ -51,7 +68,7 @@ input{border-radius: 0.4rem;}
 
 .novedadesh1{font-size: 1.2rem;
    @extend %textOverline ;
-   margin-bottom: 1rem;}
+   margin-bottom: 3rem;}
 
 .h2article{
     font-size: 18px;
@@ -69,7 +86,8 @@ input{border-radius: 0.4rem;}
     text-align: start;
     font-size: 12px;}
 
-.novedades{background-color: rgba(247, 243, 249, 0.827);
+.novedades{
+    background-color: rgba(247, 243, 249, 0.827);
     width: 310px;
     padding-top: 1rem;
     border-radius: 0.5rem;}
@@ -84,7 +102,8 @@ input{border-radius: 0.4rem;}
     justify-content: space-evenly;
     padding: 0.5rem;}
 
-.article{background-color: rgba(245, 175, 243, 0.516);
+.article{
+    background-color: rgba(245, 175, 243, 0.516);
     width: 290px;
     border-radius: 0.3rem;}
 
@@ -101,4 +120,5 @@ input{border-radius: 0.4rem;}
     transition: 3s;
 }
 
-.h2curso{@extend %textOverline;}
+.h2curso{@extend %textOverline;
+margin-top: 3rem;}

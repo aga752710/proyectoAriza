@@ -1,10 +1,11 @@
-@mixin subtitulos($tamanio,$posicion,$decoracion,$margenArriba){
+@mixin subtitulos($tamanio,$posicion,$decoracion,$margenArriba,$margenAbajo){
     font-size: $tamanio;
     text-align: $posicion;
     text-decoration: $decoracion;
     margin-top: $margenArriba;
+    margin-bottom: $margenAbajo;
 
 } 
 .subtituloRepo{
-    @include subtitulos(1.5rem, center, overline,3rem)
+    @include subtitulos(1.5rem, center, overline,3rem,2rem)
 }

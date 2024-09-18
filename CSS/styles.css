@@ -9,14 +9,16 @@ body {
 
 .cabecera {
   justify-content: center;
-  background-image: url(../images/wp4720671-color-pastel-wallpapers.jpg);
+  background-image: url(/images/wp4720671-color-pastel-wallpapers.jpg);
   background-size: cover;
-  height: 10rem;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
 .barra {
   justify-content: space-between;
   background-color: rgba(208, 43, 226, 0.264);
+  margin-bottom: 3rem;
 }
 
 .cabecera h1 {
@@ -48,6 +50,9 @@ footer {
 
 /* aplica al body main index */
 .parrafoIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.516);
   border-radius: 1rem;
   padding: 1rem;
@@ -55,7 +60,7 @@ footer {
 
 .parrafoIndex:hover {
   background-color: rgb(253, 250, 250);
-  transition: 2s;
+  transition: 1s;
 }
 
 .fotito img {
@@ -65,9 +70,18 @@ footer {
 
 p {
   text-align: center;
-  margin: 0 1rem 0.5rem 0.5rem;
+  margin: 1rem 2.5rem;
   text-indent: 10px;
   font-weight: 450;
+}
+
+.fotito {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  row-gap: 2rem;
+  padding: 5rem 2rem 0 2rem;
+  width: 65%;
 }
 
 /* aplica al body main Suscribir */
@@ -75,18 +89,9 @@ p {
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: repeat(3, 25px);
-  margin-left: 2rem;
-}
-
-.formIngresar {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-}
-
-.enviar {
-  margin-left: 1rem;
-  border-radius: 0.5rem;
+  background-color: rgba(232, 124, 221, 0.336);
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .parrafoSuscribir {
@@ -110,7 +115,7 @@ input {
 
 .novedadesh1 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .h2article {
@@ -162,6 +167,10 @@ input {
   transition: 3s;
 }
 
+.h2curso {
+  margin-top: 3rem;
+}
+
 .nav-link:hover {
   background-color: rgb(133, 84, 180);
   transition: 1s;
@@ -193,18 +202,16 @@ a:visited {
 }
 
 .fotito img:hover, .novedadesSitio:hover, .video1:hover, .video2:hover, .video3:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
+}
+
+.enviar {
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 50%;
 }
 
 @media screen and (max-width: 500px) {
-  .fotito {
-    display: block;
-  }
-  .fotito1 {
-    width: 85%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
   .formIngresar {
     grid-template-columns: 75%;
   }
@@ -237,12 +244,17 @@ a:visited {
 }
 @media screen and (min-width: 501px) and (max-width: 960px) {
   .fotito {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3rem;
   }
-  .fotito1 {
-    width: 50%;
-    margin: 1rem 0;
-    padding: 3rem;
+  .formIngresar {
+    margin: 3rem 1rem;
   }
   .linkFooter {
     display: flex;
@@ -264,18 +276,29 @@ a:visited {
     row-gap: 2rem;
   }
 }
+.parrafoIndex {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (min-width: 961px) {
   .fotito {
     display: grid;
+    grid-template-rows: max-content;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 440px);
-    margin: 1rem;
-    column-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    width: 70%;
+    height: 90%;
+    padding-bottom: 3rem;
   }
   .quienes {
     display: flex;
     flex-direction: row;
     justify-items: center;
+    margin: 0 auto;
+    width: 75%;
   }
   .linkFooter {
     display: flex;
@@ -291,12 +314,16 @@ a:visited {
     width: 100%;
     margin: 0 auto;
   }
+  .formIngresar {
+    margin: 2rem 6rem;
+  }
 }
 .subtituloRepo {
   font-size: 1.5rem;
   text-align: center;
   text-decoration: overline;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
