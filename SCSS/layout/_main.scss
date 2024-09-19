@@ -2,12 +2,11 @@
     
     .parrafoIndex{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         background-color: rgba(255, 255, 255, 0.516);
+        width: 100%;
         border-radius: 1rem;
-        padding: 1rem;
-    }
+        padding: 0.5rem;
+            }
     .parrafoIndex:hover{
         background-color: rgb(253, 250, 250);
         transition: 1s;
@@ -60,11 +59,19 @@ input{
 
 .RegistroSuscribir a{
     text-decoration: none; 
-    align-items: center;}
+    align-items: center;
+ }
 
 .RegistroSuscribir{
     display: flex;
-    justify-content: center;}
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    }
+.nav-linkRegistro{
+    background-color: rgb(242, 114, 165);
+    border-radius: 0.5rem;
+}
 
 .novedadesh1{font-size: 1.2rem;
    @extend %textOverline ;
@@ -76,7 +83,8 @@ input{
     background-color: rgba(147, 100, 153, 0.853); 
     border-radius: 0.5rem; 
     width: 150px;
-    margin-bottom: 1rem;}
+    margin-bottom: 1rem;
+    }
 
 .h3article{
     font-size: 15px;
@@ -88,8 +96,9 @@ input{
 
 .novedades{
     background-color: rgba(247, 243, 249, 0.827);
-    width: 310px;
-    padding-top: 1rem;
+    width: 290px;
+    padding: 2rem;
+    margin: 2rem;
     border-radius: 0.5rem;}
 
 .novedadesSitio{
@@ -99,13 +108,17 @@ input{
 
 .articleSuscribir{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0.5rem;}
 
 .article{
     background-color: rgba(245, 175, 243, 0.516);
-    width: 290px;
-    border-radius: 0.3rem;}
+    width: 250px;
+    margin:0 auto;
+    border-radius: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
 
 /* aplica al body main Cursos */
 
@@ -122,3 +135,10 @@ input{
 
 .h2curso{@extend %textOverline;
 margin-top: 3rem;}
+
+// Aplica carrousel main trabajos
+
+.descripcionTorta{
+    background-color: rgba(239, 131, 212, 0.644);
+    font-weight: 600;color: rgb(255, 255, 255);
+}

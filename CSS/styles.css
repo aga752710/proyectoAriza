@@ -51,11 +51,10 @@ footer {
 /* aplica al body main index */
 .parrafoIndex {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.516);
+  width: 100%;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .parrafoIndex:hover {
@@ -110,7 +109,14 @@ input {
 
 .RegistroSuscribir {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.nav-linkRegistro {
+  background-color: rgb(242, 114, 165);
+  border-radius: 0.5rem;
 }
 
 .novedadesh1 {
@@ -139,21 +145,25 @@ input {
 
 .novedades {
   background-color: rgba(247, 243, 249, 0.827);
-  width: 310px;
-  padding-top: 1rem;
+  width: 290px;
+  padding: 2rem;
+  margin: 2rem;
   border-radius: 0.5rem;
 }
 
 .articleSuscribir {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0.5rem;
 }
 
 .article {
   background-color: rgba(245, 175, 243, 0.516);
-  width: 290px;
+  width: 250px;
+  margin: 0 auto;
   border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* aplica al body main Cursos */
@@ -169,6 +179,12 @@ input {
 
 .h2curso {
   margin-top: 3rem;
+}
+
+.descripcionTorta {
+  background-color: rgba(239, 131, 212, 0.644);
+  font-weight: 600;
+  color: rgb(255, 255, 255);
 }
 
 .nav-link:hover {
@@ -202,7 +218,7 @@ a:visited {
 }
 
 .fotito img:hover, .novedadesSitio:hover, .video1:hover, .video2:hover, .video3:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .enviar {
@@ -216,8 +232,9 @@ a:visited {
     grid-template-columns: 75%;
   }
   .imgTrabajos {
-    width: 100%;
-    height: 100%;
+    margin-left: 1rem;
+    width: 90%;
+    height: 90%;
   }
   .slide {
     display: grid;
@@ -256,6 +273,10 @@ a:visited {
   .formIngresar {
     margin: 3rem 1rem;
   }
+  .imgTrabajos {
+    margin-left: 4rem;
+    width: 80%;
+  }
   .linkFooter {
     display: flex;
     justify-content: space-between;
@@ -278,7 +299,8 @@ a:visited {
 }
 .parrafoIndex {
   display: flex;
-  flex-direction: row;
+  width: 60%;
+  margin: 1rem auto;
 }
 
 @media screen and (min-width: 961px) {
@@ -316,6 +338,11 @@ a:visited {
   }
   .formIngresar {
     margin: 2rem 6rem;
+  }
+  .parrafoIndex {
+    display: flex;
+    margin: 2rem 1rem;
+    width: 90%;
   }
 }
 .subtituloRepo {

@@ -4,7 +4,10 @@
 .formIngresar{grid-template-columns: 75%;
 }
 
-.imgTrabajos{width: 100%; height:100%;}
+.imgTrabajos{
+    margin-left: 1rem;
+    width: 90%; height:90%;
+}
 
 .slide{
     display:grid;
@@ -45,6 +48,11 @@
    .formIngresar{
     margin: 3rem 1rem;
    }
+   .imgTrabajos{
+   margin-left: 4rem;   
+    width: 80%; 
+   }
+
 
 
 .linkFooter{
@@ -68,8 +76,8 @@
 }
 .parrafoIndex{
     display: flex;
-    flex-direction: row;
-    
+    width: 60%;
+    margin: 1rem auto;
 }
 
 
@@ -114,5 +122,9 @@ margin: 0 auto;}
 .formIngresar{
     margin: 2rem 6rem;
    }
-
+.parrafoIndex{
+    display: flex;
+    margin: 2rem 1rem;
+    width: 90%;
+}
 }
