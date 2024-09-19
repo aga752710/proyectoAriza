@@ -129,7 +129,6 @@ input {
   color: rgb(240, 248, 255);
   background-color: rgba(147, 100, 153, 0.853);
   border-radius: 0.5rem;
-  width: 150px;
   margin-bottom: 1rem;
 }
 
@@ -145,9 +144,9 @@ input {
 
 .novedades {
   background-color: rgba(247, 243, 249, 0.827);
-  width: 290px;
-  padding: 2rem;
-  margin: 2rem;
+  width: 250px;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 0.5rem;
 }
 
@@ -159,11 +158,11 @@ input {
 
 .article {
   background-color: rgba(245, 175, 243, 0.516);
-  width: 250px;
+  width: 220px;
   margin: 0 auto;
   border-radius: 0.3rem;
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 /* aplica al body main Cursos */
